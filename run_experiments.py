@@ -21,7 +21,7 @@ def main():
 
     print("\n=== Phase 1: Baseline (Mon–Thu -> Friday) ===")
     metrics_p1, packed = framework.run_phase1_baseline(
-        n_per_class_mon_thu=200000,
+        n_per_class_mon_thu=200000,    # adjusted
         n_per_class_fri=200000
     )
 
@@ -38,3 +38,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
