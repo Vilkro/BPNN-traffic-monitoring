@@ -4,7 +4,6 @@ import pandas as pd
 
 from framework import AdaptiveMonitoringFramework
 
-# === CONFIG: change this if your paths differ ===
 BASE_PATH = r"D:/TrafficClassification/MachineLearningCVE"
 
 CSV_FILES = [
@@ -18,8 +17,8 @@ CSV_FILES = [
     "Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv"
 ]
 
-PHASE1_DIR = "saved_models/phase1_mon_thu"       # baseline (Mon–Thu only)
-PHASE2_DIR = "saved_models/phase2_adapted"       # adapted (Mon–Thu + Friday)
+PHASE1_DIR = "saved_models/phase1_mon_thu"       # Mon–Thu only
+PHASE2_DIR = "saved_models/phase2_adapted"       # Mon–Thu + Friday
 
 
 @st.cache_resource
@@ -255,3 +254,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
